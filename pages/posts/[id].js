@@ -3,6 +3,7 @@ import Head from "next/head";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import utilStyles from "../../styles/utils.module.css";
 import Date from "../../components/Date/date";
+import Header from "../../components/Header/Header";
 
 export async function getStaticProps({ params }) {
   // Add the "await" keyword like this:
@@ -28,7 +29,7 @@ export default function Post({ postData }) {
       <Head>
         <title>{postData.title}</title>
       </Head>
-
+      <Header />
       <article>
         <h1 className={utilStyles.headingXl}>{postData.title}</h1>
         <div className={utilStyles.lightText}>

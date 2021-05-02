@@ -5,6 +5,11 @@
   letter-spacing: -0.05rem;
   margin: 1rem 0;
 }
+.headingThin {
+  font-size: 0.7rem;
+  font-weight: 200;
+  margin-top: 0.2rem;
+}
 
 .headingXl {
   font-size: 2rem;

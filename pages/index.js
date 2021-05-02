@@ -28,7 +28,23 @@ export default function Home({ allPostsData }) {
       </section>
       <Layout home>
         <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-          <h2 className={utilStyles.headingLg}>Blog</h2>
+          <h2 className={utilStyles.headingLg}>OUR PRODUCTS</h2>
+          <h3 className={utilStyles.headingThin}>FEATURED PRODUCTS</h3>
+          <div class="product-container">
+            <div class="box">
+              <p>
+                LIQUID <br /> BODYWASH
+              </p>
+            </div>
+            <div class="box">B</div>
+          </div>
+          <div class="product-container">
+            <div class="box">A</div>
+            <div class="box">B</div>
+          </div>
+        </section>
+        <section>
+          <h3 className={utilStyles.headingLg}>Blog</h3>
           <ul className={utilStyles.list}>
             {allPostsData.map(({ id, date, title }) => (
               <li className={utilStyles.listItem} key={id}>
