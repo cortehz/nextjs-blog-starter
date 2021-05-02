@@ -21,8 +21,16 @@
 }
 
 .headingMd {
+  margin-top: 80vh;
   font-size: 1.2rem;
   line-height: 1.5;
+}
+@media only screen and (max-width: 785px) {
+  .headingMd {
+    margin-top: 130vh;
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
 }
 
 .borderCircle {
