@@ -1,11 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import Header from "../Header/Header";
 import Layout from "../layout";
 import heroStyles from "./hero.module.scss";
 
 const Hero = () => {
   return (
     <main className={heroStyles.main}>
+      <Header />
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="108.405"
